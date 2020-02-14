@@ -20,7 +20,7 @@ for i = 1:length(ni)
 end
 
 
-Nd = linspace(1e16,20e16,200 - numones); % Const. 1/cm3 (100 cm/m)^3
+Nd = linspace(20e16,1e16,200 - numones); % Const. 1/cm3 (100 cm/m)^3
 Na = 1e16 * 1e6;
 NetDoping(ni) = Nd;
 NetDoping(pi) = -Na;
@@ -44,10 +44,10 @@ Wp = (W - Wn);
 LVbc = Phi;
 
 PlotSS = 0;
-PlotYAxis = {[0 Phi+0.1] [0e5 40e5] [-20e2 40e2]...
-    [0e21 2.5e22] [0 1.1e22] [0 20e43]...
-    [-5e33 5e33] [-5e33 5e33] [-0e8 3e8] ...
-    [1e-3 1e8] [-3e6 1e6] [0 2.5e22]};
+% PlotYAxis = {[0 Phi+0.1] [0e5 40e5] [-20e2 40e2]...
+%     [0e21 2.5e22] [0 1.1e22] [0 20e43]...
+%     [-5e33 5e33] [-5e33 5e33] [-0e8 3e8] ...
+%     [1e-3 1e8] [-3e6 1e6] [0 2.5e22]};
 doPlotImage = 0;
 
 SecondSim = 1;
